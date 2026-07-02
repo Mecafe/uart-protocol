@@ -9,7 +9,6 @@ output reg tx_dout;output reg tx_empty;
 parameter [1:0]IDLE=2'd0,START=2'd1,DATA=2'd2,STOP=2'd3;
 reg [1:0]p_s;
 reg [2:0]cnt=0;
-//reg [1:0]inp;
 reg [7:0]tx_reg;
 //LOGIC
 always@ (posedge clk or negedge reset)
